@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1724B6911E0911FE00D042A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6901E0911FE00D042A2 /* main.m */; };
+		1724B69C1E0911FE00D042A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1724B69B1E0911FE00D042A2 /* Assets.xcassets */; };
+		1724B69F1E0911FE00D042A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1724B69D1E0911FE00D042A2 /* LaunchScreen.storyboard */; };
+		1724B6AA1E0911FF00D042A2 /* YLAddressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6A91E0911FF00D042A2 /* YLAddressBookTests.m */; };
+		1724B6B51E0911FF00D042A2 /* YLAddressBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6B41E0911FF00D042A2 /* YLAddressBookUITests.m */; };
+		1724B6C71E0912B900D042A2 /* YLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6C61E0912B900D042A2 /* YLAppDelegate.m */; };
+		1724B6D51E0920FF00D042A2 /* YLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6D41E0920FF00D042A2 /* YLViewController.m */; };
+		1724B6DC1E09214200D042A2 /* YLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6DA1E09214200D042A2 /* YLTableViewCell.m */; };
+		1724B6DD1E09214200D042A2 /* YLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1724B6DB1E09214200D042A2 /* YLTableViewCell.xib */; };
+		1752CEAF1E0921B4002E220D /* gounda_takeshi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEAE1E0921B4002E220D /* gounda_takeshi.png */; };
+		1752CEB21E09315C002E220D /* 云云通讯.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB11E09315C002E220D /* 云云通讯.plist */; };
+		1752CEB41E093468002E220D /* GPU.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB31E093468002E220D /* GPU.plist */; };
+		1752CEB61E093482002E220D /* 财务部.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB51E093482002E220D /* 财务部.plist */; };
+		1752CEBD1E09351B002E220D /* 办公室.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB71E09351B002E220D /* 办公室.plist */; };
+		1752CEBE1E09351B002E220D /* 财务部的副本 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB81E09351B002E220D /* 财务部的副本 2.plist */; };
+		1752CEBF1E09351B002E220D /* 人力资源部.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB91E09351B002E220D /* 人力资源部.plist */; };
+		1752CEC01E09351B002E220D /* 商业价值研究院.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEBA1E09351B002E220D /* 商业价值研究院.plist */; };
+		1752CEC11E09351B002E220D /* 市场部.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEBB1E09351B002E220D /* 市场部.plist */; };
+		1752CEC21E09351B002E220D /* 运营管理部门.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEBC1E09351B002E220D /* 运营管理部门.plist */; };
+		1752CECC1E0935AF002E220D /* YLAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1752CECA1E0935AF002E220D /* YLAddressBookViewController.m */; };
+		1752CED01E0937E7002E220D /* YunYunRoot.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CECF1E0937E7002E220D /* YunYunRoot.plist */; };
+		1752CED31E0938DE002E220D /* YLAddressBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1752CED21E0938DE002E220D /* YLAddressBookModel.m */; };
+		1752CED71E093EE4002E220D /* YLDepartmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1752CED51E093EE4002E220D /* YLDepartmentCell.m */; };
+		1752CED81E093EE4002E220D /* YLDepartmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1752CED61E093EE4002E220D /* YLDepartmentCell.xib */; };
+		1752CEE11E093F2F002E220D /* YLMemeberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1752CEDF1E093F2F002E220D /* YLMemeberCell.m */; };
+		1752CEE21E093F2F002E220D /* YLMemeberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEE01E093F2F002E220D /* YLMemeberCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1724B6A61E0911FF00D042A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1724B6841E0911FE00D042A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1724B68B1E0911FE00D042A2;
+			remoteInfo = YLAddressBook;
+		};
+		1724B6B11E0911FF00D042A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1724B6841E0911FE00D042A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1724B68B1E0911FE00D042A2;
+			remoteInfo = YLAddressBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1724B68C1E0911FE00D042A2 /* YLAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1724B6901E0911FE00D042A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1724B69B1E0911FE00D042A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1724B69E1E0911FE00D042A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1724B6A01E0911FE00D042A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1724B6A51E0911FF00D042A2 /* YLAddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLAddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1724B6A91E0911FF00D042A2 /* YLAddressBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAddressBookTests.m; sourceTree = "<group>"; };
+		1724B6AB1E0911FF00D042A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1724B6B01E0911FF00D042A2 /* YLAddressBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLAddressBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1724B6B41E0911FF00D042A2 /* YLAddressBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAddressBookUITests.m; sourceTree = "<group>"; };
+		1724B6B61E0911FF00D042A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1724B6C51E0912B900D042A2 /* YLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAppDelegate.h; sourceTree = "<group>"; };
+		1724B6C61E0912B900D042A2 /* YLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAppDelegate.m; sourceTree = "<group>"; };
+		1724B6D31E0920FF00D042A2 /* YLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLViewController.h; sourceTree = "<group>"; };
+		1724B6D41E0920FF00D042A2 /* YLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLViewController.m; sourceTree = "<group>"; };
+		1724B6D91E09214200D042A2 /* YLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTableViewCell.h; sourceTree = "<group>"; };
+		1724B6DA1E09214200D042A2 /* YLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTableViewCell.m; sourceTree = "<group>"; };
+		1724B6DB1E09214200D042A2 /* YLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLTableViewCell.xib; sourceTree = "<group>"; };
+		1752CEAE1E0921B4002E220D /* gounda_takeshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gounda_takeshi.png; sourceTree = "<group>"; };
+		1752CEB11E09315C002E220D /* 云云通讯.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "云云通讯.plist"; sourceTree = "<group>"; };
+		1752CEB31E093468002E220D /* GPU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GPU.plist; sourceTree = "<group>"; };
+		1752CEB51E093482002E220D /* 财务部.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "财务部.plist"; sourceTree = "<group>"; };
+		1752CEB71E09351B002E220D /* 办公室.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "办公室.plist"; sourceTree = "<group>"; };
+		1752CEB81E09351B002E220D /* 财务部的副本 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "财务部的副本 2.plist"; sourceTree = "<group>"; };
+		1752CEB91E09351B002E220D /* 人力资源部.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "人力资源部.plist"; sourceTree = "<group>"; };
+		1752CEBA1E09351B002E220D /* 商业价值研究院.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "商业价值研究院.plist"; sourceTree = "<group>"; };
+		1752CEBB1E09351B002E220D /* 市场部.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "市场部.plist"; sourceTree = "<group>"; };
+		1752CEBC1E09351B002E220D /* 运营管理部门.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "运营管理部门.plist"; sourceTree = "<group>"; };
+		1752CEC91E0935AF002E220D /* YLAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAddressBookViewController.h; sourceTree = "<group>"; };
+		1752CECA1E0935AF002E220D /* YLAddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAddressBookViewController.m; sourceTree = "<group>"; };
+		1752CECF1E0937E7002E220D /* YunYunRoot.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YunYunRoot.plist; sourceTree = "<group>"; };
+		1752CED11E0938DE002E220D /* YLAddressBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAddressBookModel.h; sourceTree = "<group>"; };
+		1752CED21E0938DE002E220D /* YLAddressBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAddressBookModel.m; sourceTree = "<group>"; };
+		1752CED41E093EE4002E220D /* YLDepartmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDepartmentCell.h; sourceTree = "<group>"; };
+		1752CED51E093EE4002E220D /* YLDepartmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDepartmentCell.m; sourceTree = "<group>"; };
+		1752CED61E093EE4002E220D /* YLDepartmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLDepartmentCell.xib; sourceTree = "<group>"; };
+		1752CEDE1E093F2F002E220D /* YLMemeberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemeberCell.h; sourceTree = "<group>"; };
+		1752CEDF1E093F2F002E220D /* YLMemeberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemeberCell.m; sourceTree = "<group>"; };
+		1752CEE01E093F2F002E220D /* YLMemeberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMemeberCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1724B6891E0911FE00D042A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1724B6A21E0911FF00D042A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1724B6AD1E0911FF00D042A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1724B6831E0911FE00D042A2 = {
+			isa = PBXGroup;
+			children = (
+				1724B68E1E0911FE00D042A2 /* YLAddressBook */,
+				1724B6A81E0911FF00D042A2 /* YLAddressBookTests */,
+				1724B6B31E0911FF00D042A2 /* YLAddressBookUITests */,
+				1724B68D1E0911FE00D042A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1724B68D1E0911FE00D042A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1724B68C1E0911FE00D042A2 /* YLAddressBook.app */,
+				1724B6A51E0911FF00D042A2 /* YLAddressBookTests.xctest */,
+				1724B6B01E0911FF00D042A2 /* YLAddressBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1724B68E1E0911FE00D042A2 /* YLAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				1752CEB01E09313F002E220D /* YLData */,
+				1724B6CC1E0915BA00D042A2 /* YLExample */,
+				1724B6C81E0912D000D042A2 /* YLAddressBook */,
+				1724B6C41E0912B900D042A2 /* AppDelegate */,
+				1724B69B1E0911FE00D042A2 /* Assets.xcassets */,
+				1724B69D1E0911FE00D042A2 /* LaunchScreen.storyboard */,
+				1724B6A01E0911FE00D042A2 /* Info.plist */,
+				1724B68F1E0911FE00D042A2 /* Supporting Files */,
+			);
+			path = YLAddressBook;
+			sourceTree = "<group>";
+		};
+		1724B68F1E0911FE00D042A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1724B6901E0911FE00D042A2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1724B6A81E0911FF00D042A2 /* YLAddressBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				1724B6A91E0911FF00D042A2 /* YLAddressBookTests.m */,
+				1724B6AB1E0911FF00D042A2 /* Info.plist */,
+			);
+			path = YLAddressBookTests;
+			sourceTree = "<group>";
+		};
+		1724B6B31E0911FF00D042A2 /* YLAddressBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1724B6B41E0911FF00D042A2 /* YLAddressBookUITests.m */,
+				1724B6B61E0911FF00D042A2 /* Info.plist */,
+			);
+			path = YLAddressBookUITests;
+			sourceTree = "<group>";
+		};
+		1724B6C41E0912B900D042A2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1724B6C51E0912B900D042A2 /* YLAppDelegate.h */,
+				1724B6C61E0912B900D042A2 /* YLAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1724B6C81E0912D000D042A2 /* YLAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				1752CEC71E0935AF002E220D /* Models */,
+				1752CEC81E0935AF002E220D /* Viewcontrollers */,
+				1752CECB1E0935AF002E220D /* Views */,
+			);
+			path = YLAddressBook;
+			sourceTree = "<group>";
+		};
+		1724B6CC1E0915BA00D042A2 /* YLExample */ = {
+			isa = PBXGroup;
+			children = (
+				1752CEAD1E0921B4002E220D /* images */,
+				1724B6D01E0920FF00D042A2 /* model */,
+				1724B6D11E0920FF00D042A2 /* view */,
+				1724B6D21E0920FF00D042A2 /* viewcontrller */,
+			);
+			path = YLExample;
+			sourceTree = "<group>";
+		};
+		1724B6D01E0920FF00D042A2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1724B6D11E0920FF00D042A2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1724B6D91E09214200D042A2 /* YLTableViewCell.h */,
+				1724B6DA1E09214200D042A2 /* YLTableViewCell.m */,
+				1724B6DB1E09214200D042A2 /* YLTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1724B6D21E0920FF00D042A2 /* viewcontrller */ = {
+			isa = PBXGroup;
+			children = (
+				1724B6D31E0920FF00D042A2 /* YLViewController.h */,
+				1724B6D41E0920FF00D042A2 /* YLViewController.m */,
+			);
+			path = viewcontrller;
+			sourceTree = "<group>";
+		};
+		1752CEAD1E0921B4002E220D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1752CEAE1E0921B4002E220D /* gounda_takeshi.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		1752CEB01E09313F002E220D /* YLData */ = {
+			isa = PBXGroup;
+			children = (
+				1752CEB71E09351B002E220D /* 办公室.plist */,
+				1752CEB81E09351B002E220D /* 财务部的副本 2.plist */,
+				1752CEB91E09351B002E220D /* 人力资源部.plist */,
+				1752CEBA1E09351B002E220D /* 商业价值研究院.plist */,
+				1752CEBB1E09351B002E220D /* 市场部.plist */,
+				1752CEBC1E09351B002E220D /* 运营管理部门.plist */,
+				1752CEB11E09315C002E220D /* 云云通讯.plist */,
+				1752CEB31E093468002E220D /* GPU.plist */,
+				1752CEB51E093482002E220D /* 财务部.plist */,
+				1752CECF1E0937E7002E220D /* YunYunRoot.plist */,
+			);
+			path = YLData;
+			sourceTree = "<group>";
+		};
+		1752CEC71E0935AF002E220D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1752CED11E0938DE002E220D /* YLAddressBookModel.h */,
+				1752CED21E0938DE002E220D /* YLAddressBookModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1752CEC81E0935AF002E220D /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				1752CEC91E0935AF002E220D /* YLAddressBookViewController.h */,
+				1752CECA1E0935AF002E220D /* YLAddressBookViewController.m */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		1752CECB1E0935AF002E220D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1752CED41E093EE4002E220D /* YLDepartmentCell.h */,
+				1752CED51E093EE4002E220D /* YLDepartmentCell.m */,
+				1752CED61E093EE4002E220D /* YLDepartmentCell.xib */,
+				1752CEDE1E093F2F002E220D /* YLMemeberCell.h */,
+				1752CEDF1E093F2F002E220D /* YLMemeberCell.m */,
+				1752CEE01E093F2F002E220D /* YLMemeberCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1724B68B1E0911FE00D042A2 /* YLAddressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1724B6B91E0911FF00D042A2 /* Build configuration list for PBXNativeTarget "YLAddressBook" */;
+			buildPhases = (
+				1724B6881E0911FE00D042A2 /* Sources */,
+				1724B6891E0911FE00D042A2 /* Frameworks */,
+				1724B68A1E0911FE00D042A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLAddressBook;
+			productName = YLAddressBook;
+			productReference = 1724B68C1E0911FE00D042A2 /* YLAddressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1724B6A41E0911FF00D042A2 /* YLAddressBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1724B6BC1E0911FF00D042A2 /* Build configuration list for PBXNativeTarget "YLAddressBookTests" */;
+			buildPhases = (
+				1724B6A11E0911FF00D042A2 /* Sources */,
+				1724B6A21E0911FF00D042A2 /* Frameworks */,
+				1724B6A31E0911FF00D042A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1724B6A71E0911FF00D042A2 /* PBXTargetDependency */,
+			);
+			name = YLAddressBookTests;
+			productName = YLAddressBookTests;
+			productReference = 1724B6A51E0911FF00D042A2 /* YLAddressBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1724B6AF1E0911FF00D042A2 /* YLAddressBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1724B6BF1E0911FF00D042A2 /* Build configuration list for PBXNativeTarget "YLAddressBookUITests" */;
+			buildPhases = (
+				1724B6AC1E0911FF00D042A2 /* Sources */,
+				1724B6AD1E0911FF00D042A2 /* Frameworks */,
+				1724B6AE1E0911FF00D042A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1724B6B21E0911FF00D042A2 /* PBXTargetDependency */,
+			);
+			name = YLAddressBookUITests;
+			productName = YLAddressBookUITests;
+			productReference = 1724B6B01E0911FF00D042A2 /* YLAddressBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1724B6841E0911FE00D042A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = YouLing;
+				TargetAttributes = {
+					1724B68B1E0911FE00D042A2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					1724B6A41E0911FF00D042A2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1724B68B1E0911FE00D042A2;
+					};
+					1724B6AF1E0911FF00D042A2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1724B68B1E0911FE00D042A2;
+					};
+				};
+			};
+			buildConfigurationList = 1724B6871E0911FE00D042A2 /* Build configuration list for PBXProject "YLAddressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1724B6831E0911FE00D042A2;
+			productRefGroup = 1724B68D1E0911FE00D042A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1724B68B1E0911FE00D042A2 /* YLAddressBook */,
+				1724B6A41E0911FF00D042A2 /* YLAddressBookTests */,
+				1724B6AF1E0911FF00D042A2 /* YLAddressBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1724B68A1E0911FE00D042A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1752CEBF1E09351B002E220D /* 人力资源部.plist in Resources */,
+				1752CEB21E09315C002E220D /* 云云通讯.plist in Resources */,
+				1752CEBD1E09351B002E220D /* 办公室.plist in Resources */,
+				1752CEC11E09351B002E220D /* 市场部.plist in Resources */,
+				1752CEE21E093F2F002E220D /* YLMemeberCell.xib in Resources */,
+				1724B69F1E0911FE00D042A2 /* LaunchScreen.storyboard in Resources */,
+				1724B69C1E0911FE00D042A2 /* Assets.xcassets in Resources */,
+				1752CED01E0937E7002E220D /* YunYunRoot.plist in Resources */,
+				1752CEB61E093482002E220D /* 财务部.plist in Resources */,
+				1752CEC21E09351B002E220D /* 运营管理部门.plist in Resources */,
+				1752CEC01E09351B002E220D /* 商业价值研究院.plist in Resources */,
+				1724B6DD1E09214200D042A2 /* YLTableViewCell.xib in Resources */,
+				1752CEBE1E09351B002E220D /* 财务部的副本 2.plist in Resources */,
+				1752CEAF1E0921B4002E220D /* gounda_takeshi.png in Resources */,
+				1752CED81E093EE4002E220D /* YLDepartmentCell.xib in Resources */,
+				1752CEB41E093468002E220D /* GPU.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1724B6A31E0911FF00D042A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1724B6AE1E0911FF00D042A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1724B6881E0911FE00D042A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1752CED71E093EE4002E220D /* YLDepartmentCell.m in Sources */,
+				1724B6DC1E09214200D042A2 /* YLTableViewCell.m in Sources */,
+				1752CECC1E0935AF002E220D /* YLAddressBookViewController.m in Sources */,
+				1752CED31E0938DE002E220D /* YLAddressBookModel.m in Sources */,
+				1752CEE11E093F2F002E220D /* YLMemeberCell.m in Sources */,
+				1724B6911E0911FE00D042A2 /* main.m in Sources */,
+				1724B6D51E0920FF00D042A2 /* YLViewController.m in Sources */,
+				1724B6C71E0912B900D042A2 /* YLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1724B6A11E0911FF00D042A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1724B6AA1E0911FF00D042A2 /* YLAddressBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1724B6AC1E0911FF00D042A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1724B6B51E0911FF00D042A2 /* YLAddressBookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1724B6A71E0911FF00D042A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1724B68B1E0911FE00D042A2 /* YLAddressBook */;
+			targetProxy = 1724B6A61E0911FF00D042A2 /* PBXContainerItemProxy */;
+		};
+		1724B6B21E0911FF00D042A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1724B68B1E0911FE00D042A2 /* YLAddressBook */;
+			targetProxy = 1724B6B11E0911FF00D042A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1724B69D1E0911FE00D042A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1724B69E1E0911FE00D042A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1724B6B71E0911FF00D042A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1724B6B81E0911FF00D042A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1724B6BA1E0911FF00D042A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YLAddressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1724B6BB1E0911FF00D042A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YLAddressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1724B6BD1E0911FF00D042A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YLAddressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLAddressBook.app/YLAddressBook";
+			};
+			name = Debug;
+		};
+		1724B6BE1E0911FF00D042A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YLAddressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLAddressBook.app/YLAddressBook";
+			};
+			name = Release;
+		};
+		1724B6C01E0911FF00D042A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YLAddressBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YLAddressBook;
+			};
+			name = Debug;
+		};
+		1724B6C11E0911FF00D042A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YLAddressBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YLAddressBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1724B6871E0911FE00D042A2 /* Build configuration list for PBXProject "YLAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1724B6B71E0911FF00D042A2 /* Debug */,
+				1724B6B81E0911FF00D042A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1724B6B91E0911FF00D042A2 /* Build configuration list for PBXNativeTarget "YLAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1724B6BA1E0911FF00D042A2 /* Debug */,
+				1724B6BB1E0911FF00D042A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1724B6BC1E0911FF00D042A2 /* Build configuration list for PBXNativeTarget "YLAddressBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1724B6BD1E0911FF00D042A2 /* Debug */,
+				1724B6BE1E0911FF00D042A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1724B6BF1E0911FF00D042A2 /* Build configuration list for PBXNativeTarget "YLAddressBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1724B6C01E0911FF00D042A2 /* Debug */,
+				1724B6C11E0911FF00D042A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1724B6841E0911FE00D042A2 /* Project object */;
+}

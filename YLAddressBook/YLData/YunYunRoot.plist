@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DepartmentAndMembers </key>
+	<array>
+		<dict>
+			<key>connectionplist</key>
+			<string>云云通讯</string>
+			<key>icon</key>
+			<string></string>
+			<key>itemType</key>
+			<string>department</string>
+			<key>name</key>
+			<string>云云通许</string>
+		</dict>
+	</array>
+</dict>
+</plist>

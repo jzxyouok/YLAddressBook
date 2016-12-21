@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="YLTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gounda_takeshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="jrQ-LX-abB">
+                        <rect key="frame" x="8" y="6.5" width="46" height="46.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="Jk5-xe-ntd"/>
+                            <constraint firstAttribute="width" constant="46" id="j0m-6b-2hY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在线通讯录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mop-Pl-rct">
+                        <rect key="frame" x="62" y="2" width="248" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="rOl-se-MQZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auw-Xv-b1N">
+                        <rect key="frame" x="0.0" y="58.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="x8s-9g-RsV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="auw-Xv-b1N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="3UM-fV-pj0"/>
+                    <constraint firstItem="mop-Pl-rct" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="OkF-OV-BnL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="auw-Xv-b1N" secondAttribute="bottom" constant="-8" id="Sdn-zb-L9J"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="auw-Xv-b1N" secondAttribute="trailing" constant="-8" id="iMq-xx-R4H"/>
+                    <constraint firstItem="jrQ-LX-abB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sB6-d9-w4X"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="jrQ-LX-abB" secondAttribute="leading" id="sEK-oC-wT1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mop-Pl-rct" secondAttribute="trailing" constant="2" id="sZi-pY-aTW"/>
+                    <constraint firstItem="mop-Pl-rct" firstAttribute="leading" secondItem="jrQ-LX-abB" secondAttribute="trailing" constant="8" id="v33-ii-bV3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="separatorLabel" destination="auw-Xv-b1N" id="4ae-em-G35"/>
+            </connections>
+            <point key="canvasLocation" x="-102" y="-514"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gounda_takeshi.png" width="256" height="256"/>
+    </resources>
+</document>
