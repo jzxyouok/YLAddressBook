@@ -6,33 +6,23 @@
 	<array>
 		<dict>
 			<key>connectionplist</key>
-			<string>综合部</string>
+			<string>双</string>
 			<key>icon</key>
 			<string></string>
 			<key>itemType</key>
-			<string>department</string>
+			<string>memeber</string>
 			<key>name</key>
-			<string>综合部</string>
+			<string>双</string>
 		</dict>
 		<dict>
 			<key>connectionplist</key>
-			<string>解决方案及产品中心</string>
+			<string>test01</string>
 			<key>icon</key>
 			<string></string>
 			<key>itemType</key>
-			<string>department</string>
+			<string>memeber</string>
 			<key>name</key>
-			<string>解决方案及产品中心</string>
-		</dict>
-		<dict>
-			<key>connectionplist</key>
-			<string>项目实施与服务中心</string>
-			<key>icon</key>
-			<string></string>
-			<key>itemType</key>
-			<string>department</string>
-			<key>name</key>
-			<string>项目实施与服务中心</string>
+			<string>test01</string>
 		</dict>
 	</array>
 </dict>

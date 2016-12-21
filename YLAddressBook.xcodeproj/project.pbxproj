@@ -21,7 +21,6 @@
 		1752CEB41E093468002E220D /* GPU.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB31E093468002E220D /* GPU.plist */; };
 		1752CEB61E093482002E220D /* 财务部.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB51E093482002E220D /* 财务部.plist */; };
 		1752CEBD1E09351B002E220D /* 办公室.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB71E09351B002E220D /* 办公室.plist */; };
-		1752CEBE1E09351B002E220D /* 财务部的副本 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB81E09351B002E220D /* 财务部的副本 2.plist */; };
 		1752CEBF1E09351B002E220D /* 人力资源部.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB91E09351B002E220D /* 人力资源部.plist */; };
 		1752CEC01E09351B002E220D /* 商业价值研究院.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEBA1E09351B002E220D /* 商业价值研究院.plist */; };
 		1752CEC11E09351B002E220D /* 市场部.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEBB1E09351B002E220D /* 市场部.plist */; };
@@ -33,6 +32,10 @@
 		1752CED81E093EE4002E220D /* YLDepartmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1752CED61E093EE4002E220D /* YLDepartmentCell.xib */; };
 		1752CEE11E093F2F002E220D /* YLMemeberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1752CEDF1E093F2F002E220D /* YLMemeberCell.m */; };
 		1752CEE21E093F2F002E220D /* YLMemeberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEE01E093F2F002E220D /* YLMemeberCell.xib */; };
+		17A0A2F81E0A857E0053C286 /* messageframe_pic_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A0A2F61E0A857E0053C286 /* messageframe_pic_arrow.png */; };
+		17A0A2FC1E0A8C190053C286 /* 解决方案及产品中心.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A0A2F91E0A8C190053C286 /* 解决方案及产品中心.plist */; };
+		17A0A2FD1E0A8C190053C286 /* 项目实施与服务中心.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A0A2FA1E0A8C190053C286 /* 项目实施与服务中心.plist */; };
+		17A0A2FE1E0A8C190053C286 /* 综合部.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A0A2FB1E0A8C190053C286 /* 综合部.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +79,6 @@
 		1752CEB31E093468002E220D /* GPU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GPU.plist; sourceTree = "<group>"; };
 		1752CEB51E093482002E220D /* 财务部.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "财务部.plist"; sourceTree = "<group>"; };
 		1752CEB71E09351B002E220D /* 办公室.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "办公室.plist"; sourceTree = "<group>"; };
-		1752CEB81E09351B002E220D /* 财务部的副本 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "财务部的副本 2.plist"; sourceTree = "<group>"; };
 		1752CEB91E09351B002E220D /* 人力资源部.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "人力资源部.plist"; sourceTree = "<group>"; };
 		1752CEBA1E09351B002E220D /* 商业价值研究院.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "商业价值研究院.plist"; sourceTree = "<group>"; };
 		1752CEBB1E09351B002E220D /* 市场部.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "市场部.plist"; sourceTree = "<group>"; };
@@ -92,6 +94,10 @@
 		1752CEDE1E093F2F002E220D /* YLMemeberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemeberCell.h; sourceTree = "<group>"; };
 		1752CEDF1E093F2F002E220D /* YLMemeberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemeberCell.m; sourceTree = "<group>"; };
 		1752CEE01E093F2F002E220D /* YLMemeberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMemeberCell.xib; sourceTree = "<group>"; };
+		17A0A2F61E0A857E0053C286 /* messageframe_pic_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messageframe_pic_arrow.png; sourceTree = "<group>"; };
+		17A0A2F91E0A8C190053C286 /* 解决方案及产品中心.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "解决方案及产品中心.plist"; sourceTree = "<group>"; };
+		17A0A2FA1E0A8C190053C286 /* 项目实施与服务中心.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "项目实施与服务中心.plist"; sourceTree = "<group>"; };
+		17A0A2FB1E0A8C190053C286 /* 综合部.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "综合部.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +245,7 @@
 		1752CEAD1E0921B4002E220D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				17A0A2F61E0A857E0053C286 /* messageframe_pic_arrow.png */,
 				1752CEAE1E0921B4002E220D /* gounda_takeshi.png */,
 			);
 			path = images;
@@ -247,8 +254,10 @@
 		1752CEB01E09313F002E220D /* YLData */ = {
 			isa = PBXGroup;
 			children = (
+				17A0A2F91E0A8C190053C286 /* 解决方案及产品中心.plist */,
+				17A0A2FA1E0A8C190053C286 /* 项目实施与服务中心.plist */,
+				17A0A2FB1E0A8C190053C286 /* 综合部.plist */,
 				1752CEB71E09351B002E220D /* 办公室.plist */,
-				1752CEB81E09351B002E220D /* 财务部的副本 2.plist */,
 				1752CEB91E09351B002E220D /* 人力资源部.plist */,
 				1752CEBA1E09351B002E220D /* 商业价值研究院.plist */,
 				1752CEBB1E09351B002E220D /* 市场部.plist */,
@@ -359,6 +368,7 @@
 				TargetAttributes = {
 					1724B68B1E0911FE00D042A2 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3W4ATPLZRK;
 						ProvisioningStyle = Automatic;
 					};
 					1724B6A41E0911FF00D042A2 = {
@@ -403,6 +413,7 @@
 				1752CEBD1E09351B002E220D /* 办公室.plist in Resources */,
 				1752CEC11E09351B002E220D /* 市场部.plist in Resources */,
 				1752CEE21E093F2F002E220D /* YLMemeberCell.xib in Resources */,
+				17A0A2F81E0A857E0053C286 /* messageframe_pic_arrow.png in Resources */,
 				1724B69F1E0911FE00D042A2 /* LaunchScreen.storyboard in Resources */,
 				1724B69C1E0911FE00D042A2 /* Assets.xcassets in Resources */,
 				1752CED01E0937E7002E220D /* YunYunRoot.plist in Resources */,
@@ -410,10 +421,12 @@
 				1752CEC21E09351B002E220D /* 运营管理部门.plist in Resources */,
 				1752CEC01E09351B002E220D /* 商业价值研究院.plist in Resources */,
 				1724B6DD1E09214200D042A2 /* YLTableViewCell.xib in Resources */,
-				1752CEBE1E09351B002E220D /* 财务部的副本 2.plist in Resources */,
 				1752CEAF1E0921B4002E220D /* gounda_takeshi.png in Resources */,
 				1752CED81E093EE4002E220D /* YLDepartmentCell.xib in Resources */,
+				17A0A2FE1E0A8C190053C286 /* 综合部.plist in Resources */,
+				17A0A2FC1E0A8C190053C286 /* 解决方案及产品中心.plist in Resources */,
 				1752CEB41E093468002E220D /* GPU.plist in Resources */,
+				17A0A2FD1E0A8C190053C286 /* 项目实施与服务中心.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +599,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3W4ATPLZRK;
 				INFOPLIST_FILE = YLAddressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -597,7 +612,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3W4ATPLZRK;
 				INFOPLIST_FILE = YLAddressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";

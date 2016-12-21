@@ -19,29 +19,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gounda_takeshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qx5-Wi-ioV">
-                        <rect key="frame" x="8" y="2" width="46" height="45.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messageframe_pic_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qx5-Wi-ioV">
+                        <rect key="frame" x="8" y="19.5" width="10" height="10"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="46" id="nP7-AN-OaQ"/>
+                            <constraint firstAttribute="width" constant="10" id="8Ar-JD-ejs"/>
+                            <constraint firstAttribute="height" constant="10" id="Lmf-HF-a3q"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="部门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxK-Su-FRa">
-                        <rect key="frame" x="62" y="2" width="239" height="46"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="46" id="C8x-DN-ZrK"/>
-                        </constraints>
+                        <rect key="frame" x="23" y="15" width="280" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="dxK-Su-FRa" firstAttribute="leading" secondItem="Qx5-Wi-ioV" secondAttribute="trailing" constant="8" id="520-QU-eDE"/>
-                    <constraint firstItem="dxK-Su-FRa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="C1X-Cp-RTf"/>
-                    <constraint firstItem="Qx5-Wi-ioV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="YMG-YM-idf"/>
-                    <constraint firstAttribute="bottom" secondItem="Qx5-Wi-ioV" secondAttribute="bottom" constant="2" id="YVA-MT-38Y"/>
-                    <constraint firstItem="Qx5-Wi-ioV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="n2l-zY-Fbd"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="dxK-Su-FRa" secondAttribute="trailing" constant="11" id="rPR-74-sly"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dxK-Su-FRa" secondAttribute="trailing" constant="9" id="9G1-iK-8le"/>
+                    <constraint firstItem="Qx5-Wi-ioV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZJE-QC-Ker"/>
+                    <constraint firstItem="dxK-Su-FRa" firstAttribute="leading" secondItem="Qx5-Wi-ioV" secondAttribute="trailing" constant="5" id="lfe-YG-pXc"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Qx5-Wi-ioV" secondAttribute="leading" id="nqa-X6-6BO"/>
+                    <constraint firstItem="dxK-Su-FRa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rxf-xd-DUr"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -52,6 +49,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="gounda_takeshi.png" width="256" height="256"/>
+        <image name="messageframe_pic_arrow.png" width="21" height="36"/>
     </resources>
 </document>

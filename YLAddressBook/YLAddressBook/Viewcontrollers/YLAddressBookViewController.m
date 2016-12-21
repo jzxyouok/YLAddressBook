@@ -88,11 +88,21 @@
 {
     return 2;
 }
+/*
+ * 跳转的时候，要做动画处理
+ */
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.section == 0)
     {
-        
+        UIAlertController* alertcontroller = [UIAlertController alertControllerWithTitle:@"提示" message:@"个人聊天界面正在开发中" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* alertAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alertcontroller addAction:alertAction];
+        [self presentViewController:alertcontroller animated:YES completion:^{
+            
+        }];
     }
     else if(indexPath.section == 1)
     {
