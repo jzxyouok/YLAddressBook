@@ -9,6 +9,7 @@
 #import "YLViewController.h"
 #import "YLTableViewCell.h"
 #import "YLAddressBookViewController.h"
+#import "YLAddressBookModel.h"
 @interface YLViewController ()<UITableViewDelegate,UITableViewDataSource,YLAddressBookViewControllerDelegate>
 
 @property(nonatomic,strong) UITableView* tableView;
@@ -49,6 +50,7 @@
     if (indexPath.row == 0) {
         //NSLog(@"你点击了这里");
         YLAddressBookViewController* addreBookViewController = [[YLAddressBookViewController alloc] init];
+        addreBookViewController.delegate = self;
         [self.navigationController pushViewController:addreBookViewController animated:YES];
         self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:nil];
         
@@ -68,7 +70,33 @@
 #pragma mark - YLAddressBookViewController的代理
 -(NSArray*) YLAddressBookViewController:(YLAddressBookViewController *)viewcontroller getNextListDataWithConnect:(NSString *)connectPlist
 {
-    return nil;
+    //获取plist的路径
+    NSString* connectPlistPath = [[NSBundle mainBundle] pathForResource:connectPlist ofType:@".plist"];
+    //读取plist的内容
+    NSMutableDictionary* dictA = [[NSMutableDictionary alloc] initWithContentsOfFile:connectPlistPath];
+    //对plist的内容就行解析
+    NSArray* arrayA = [dictA objectForKey:@"DepartmentAndMembers"];
+    NSMutableArray* departmentDataArray = [NSMutableArray array];
+    NSMutableArray* memeberDataArray = [NSMutableArray array];
+    NSMutableArray* dataArray = [NSMutableArray array];
+    //对数据进行解析
+    for (NSDictionary* dict in arrayA) {
+        YLAddressBookModel* addressBookModel = [YLAddressBookModel addressBookModelWithDict:dict];
+        //[dataArray addObject:addressBookModel];
+        if ([addressBookModel.itemType isEqualToString:@"memeber"]) {
+            [memeberDataArray addObject:addressBookModel];
+        }
+        else if([addressBookModel.itemType isEqualToString:@"department"])
+        {
+            [departmentDataArray addObject:addressBookModel];
+        }
+    }
+    
+    [dataArray addObject:memeberDataArray];
+    
+    [dataArray addObject:departmentDataArray];
+    
+    return dataArray;
 }
 /*
 #pragma mark - Navigation

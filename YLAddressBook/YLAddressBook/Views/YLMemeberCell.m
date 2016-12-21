@@ -8,17 +8,26 @@
 
 #import "YLMemeberCell.h"
 
+@interface YLMemeberCell()
+@property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@end
+
 @implementation YLMemeberCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+-(void) setDataModel:(YLAddressBookModel *)dataModel
+{
+    self.nameLabel.text = dataModel.name;
 }
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
++(instancetype) cellWithTableView:(UITableView*) tableView
+{
+    NSString* className = NSStringFromClass([self class]);
+    
+    UINib * nib = [UINib nibWithNibName:className bundle:nil];
+    
+    [tableView registerNib:nib forCellReuseIdentifier:className];
+    
+    return [tableView dequeueReusableCellWithIdentifier:className];
 }
-
 @end

@@ -19,5 +19,8 @@
 
 @interface YLAddressBookViewController : UIViewController
 
+@property(nonatomic,strong) NSString* departId;
+//设置代理
+@property(nonatomic,weak) id<YLAddressBookViewControllerDelegate> delegate;
 
 @end

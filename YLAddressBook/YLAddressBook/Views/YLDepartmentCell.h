@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "YLAddressBookModel.h"
 @interface YLDepartmentCell : UITableViewCell
 
+@property(nonatomic,strong) YLAddressBookModel* dataModel;
+
++(instancetype) cellWithTableView:(UITableView*) tableView;
 @end

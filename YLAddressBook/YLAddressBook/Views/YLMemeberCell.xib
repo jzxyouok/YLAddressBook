@@ -1,19 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YLMemeberCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="YLMemeberCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="325" height="49.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gounda_takeshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cy5-hB-NOS">
+                        <rect key="frame" x="8" y="2" width="46" height="45.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="3iF-ix-nI7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfS-SU-Nod">
+                        <rect key="frame" x="62" y="2" width="255" height="46"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cy5-hB-NOS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="6UB-Bk-fGZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Cy5-hB-NOS" secondAttribute="bottom" constant="2" id="8Q4-5a-L3J"/>
+                    <constraint firstItem="Cy5-hB-NOS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="CyB-mM-xjs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UfS-SU-Nod" secondAttribute="trailing" id="SuW-HI-B4x"/>
+                    <constraint firstItem="UfS-SU-Nod" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="d6d-j6-Ka9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UfS-SU-Nod" secondAttribute="bottom" constant="-6.5" id="jWS-U8-SaV"/>
+                    <constraint firstItem="UfS-SU-Nod" firstAttribute="leading" secondItem="Cy5-hB-NOS" secondAttribute="trailing" constant="8" id="yW0-om-MOh"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImageView" destination="Cy5-hB-NOS" id="dC2-LB-Z6m"/>
+                <outlet property="nameLabel" destination="UfS-SU-Nod" id="t20-cv-3A7"/>
+            </connections>
+            <point key="canvasLocation" x="-187" y="-72"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="gounda_takeshi.png" width="256" height="256"/>
+    </resources>
 </document>

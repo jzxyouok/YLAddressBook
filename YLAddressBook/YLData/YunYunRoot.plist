@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>DepartmentAndMembers </key>
+	<key>DepartmentAndMembers</key>
 	<array>
 		<dict>
 			<key>connectionplist</key>
@@ -12,7 +12,7 @@
 			<key>itemType</key>
 			<string>department</string>
 			<key>name</key>
-			<string>云云通许</string>
+			<string>云云通讯</string>
 		</dict>
 	</array>
 </dict>

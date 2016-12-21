@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   财务部.plist
-   YLAddressBook
-
-   Created by YouLing on 2016/12/20.
-   Copyright (c) 2016年 YouLing. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>DepartmentAndMembers</key>
+	<array>
+		<dict>
+			<key>connectionplist</key>
+			<string>小亮</string>
+			<key>icon</key>
+			<string></string>
+			<key>itemType</key>
+			<string>memeber</string>
+			<key>name</key>
+			<string>小亮</string>
+		</dict>
+		<dict>
+			<key>connectionplist</key>
+			<string>test01</string>
+			<key>icon</key>
+			<string></string>
+			<key>itemType</key>
+			<string>memeber</string>
+			<key>name</key>
+			<string>test01</string>
+		</dict>
+	</array>
+</dict>
 </plist>
