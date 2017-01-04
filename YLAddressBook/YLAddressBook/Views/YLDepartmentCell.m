@@ -21,6 +21,7 @@
 -(void) setDataModel:(YLAddressBookModel *)dataModel
 {
     self.labelName.text = dataModel.name;
+   
 }
 +(instancetype) cellWithTableView:(UITableView*) tableView
 {

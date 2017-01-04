@@ -19,6 +19,7 @@
 -(void) setDataModel:(YLAddressBookModel *)dataModel
 {
     self.nameLabel.text = dataModel.name;
+    //self.cellImageView.image = [YLUtility createHeadImageWithUserName:@""];
 }
 +(instancetype) cellWithTableView:(UITableView*) tableView
 {

@@ -16,6 +16,7 @@
 		1724B6D51E0920FF00D042A2 /* YLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6D41E0920FF00D042A2 /* YLViewController.m */; };
 		1724B6DC1E09214200D042A2 /* YLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6DA1E09214200D042A2 /* YLTableViewCell.m */; };
 		1724B6DD1E09214200D042A2 /* YLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1724B6DB1E09214200D042A2 /* YLTableViewCell.xib */; };
+		1736E83C1E0AD24800B442BA /* YLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1736E83B1E0AD24800B442BA /* YLUtility.m */; };
 		1752CEAF1E0921B4002E220D /* gounda_takeshi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEAE1E0921B4002E220D /* gounda_takeshi.png */; };
 		1752CEB21E09315C002E220D /* 云云通讯.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB11E09315C002E220D /* 云云通讯.plist */; };
 		1752CEB41E093468002E220D /* GPU.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB31E093468002E220D /* GPU.plist */; };
@@ -74,6 +75,9 @@
 		1724B6D91E09214200D042A2 /* YLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTableViewCell.h; sourceTree = "<group>"; };
 		1724B6DA1E09214200D042A2 /* YLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTableViewCell.m; sourceTree = "<group>"; };
 		1724B6DB1E09214200D042A2 /* YLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLTableViewCell.xib; sourceTree = "<group>"; };
+		1736E83A1E0AD24800B442BA /* YLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLUtility.h; sourceTree = "<group>"; };
+		1736E83B1E0AD24800B442BA /* YLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUtility.m; sourceTree = "<group>"; };
+		1736E83D1E0ADD7D00B442BA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1752CEAE1E0921B4002E220D /* gounda_takeshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gounda_takeshi.png; sourceTree = "<group>"; };
 		1752CEB11E09315C002E220D /* 云云通讯.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "云云通讯.plist"; sourceTree = "<group>"; };
 		1752CEB31E093468002E220D /* GPU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GPU.plist; sourceTree = "<group>"; };
@@ -148,10 +152,11 @@
 		1724B68E1E0911FE00D042A2 /* YLAddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				1752CEB01E09313F002E220D /* YLData */,
+				1724B6C41E0912B900D042A2 /* AppDelegate */,
 				1724B6CC1E0915BA00D042A2 /* YLExample */,
 				1724B6C81E0912D000D042A2 /* YLAddressBook */,
-				1724B6C41E0912B900D042A2 /* AppDelegate */,
+				1752CEB01E09313F002E220D /* YLData */,
+				1736E8391E0AD1EB00B442BA /* Utility */,
 				1724B69B1E0911FE00D042A2 /* Assets.xcassets */,
 				1724B69D1E0911FE00D042A2 /* LaunchScreen.storyboard */,
 				1724B6A01E0911FE00D042A2 /* Info.plist */,
@@ -240,6 +245,16 @@
 				1724B6D41E0920FF00D042A2 /* YLViewController.m */,
 			);
 			path = viewcontrller;
+			sourceTree = "<group>";
+		};
+		1736E8391E0AD1EB00B442BA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1736E83A1E0AD24800B442BA /* YLUtility.h */,
+				1736E83B1E0AD24800B442BA /* YLUtility.m */,
+				1736E83D1E0ADD7D00B442BA /* PrefixHeader.pch */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		1752CEAD1E0921B4002E220D /* images */ = {
@@ -451,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1736E83C1E0AD24800B442BA /* YLUtility.m in Sources */,
 				1752CED71E093EE4002E220D /* YLDepartmentCell.m in Sources */,
 				1724B6DC1E09214200D042A2 /* YLTableViewCell.m in Sources */,
 				1752CECC1E0935AF002E220D /* YLAddressBookViewController.m in Sources */,
@@ -600,11 +616,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3W4ATPLZRK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLAddressBook/Utility/PrefixHeader.pch";
 				INFOPLIST_FILE = YLAddressBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -613,11 +631,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3W4ATPLZRK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLAddressBook/Utility/PrefixHeader.pch";
 				INFOPLIST_FILE = YLAddressBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youling.YLAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
