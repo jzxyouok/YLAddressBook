@@ -16,6 +16,9 @@
 		1724B6D51E0920FF00D042A2 /* YLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6D41E0920FF00D042A2 /* YLViewController.m */; };
 		1724B6DC1E09214200D042A2 /* YLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724B6DA1E09214200D042A2 /* YLTableViewCell.m */; };
 		1724B6DD1E09214200D042A2 /* YLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1724B6DB1E09214200D042A2 /* YLTableViewCell.xib */; };
+		1727DFC61E1DEBB800393218 /* YLAddressBookZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727DFC51E1DEBB800393218 /* YLAddressBookZoomController.m */; };
+		1727DFC91E1DED9000393218 /* YLZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727DFC81E1DED9000393218 /* YLZoomView.m */; };
+		1727DFCB1E1DEDCA00393218 /* YLZoomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1727DFCA1E1DEDCA00393218 /* YLZoomView.xib */; };
 		1736E83C1E0AD24800B442BA /* YLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1736E83B1E0AD24800B442BA /* YLUtility.m */; };
 		1752CEAF1E0921B4002E220D /* gounda_takeshi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEAE1E0921B4002E220D /* gounda_takeshi.png */; };
 		1752CEB21E09315C002E220D /* 云云通讯.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1752CEB11E09315C002E220D /* 云云通讯.plist */; };
@@ -75,6 +78,11 @@
 		1724B6D91E09214200D042A2 /* YLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTableViewCell.h; sourceTree = "<group>"; };
 		1724B6DA1E09214200D042A2 /* YLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTableViewCell.m; sourceTree = "<group>"; };
 		1724B6DB1E09214200D042A2 /* YLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLTableViewCell.xib; sourceTree = "<group>"; };
+		1727DFC41E1DEBB800393218 /* YLAddressBookZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAddressBookZoomController.h; sourceTree = "<group>"; };
+		1727DFC51E1DEBB800393218 /* YLAddressBookZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAddressBookZoomController.m; sourceTree = "<group>"; };
+		1727DFC71E1DED9000393218 /* YLZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZoomView.h; sourceTree = "<group>"; };
+		1727DFC81E1DED9000393218 /* YLZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZoomView.m; sourceTree = "<group>"; };
+		1727DFCA1E1DEDCA00393218 /* YLZoomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLZoomView.xib; sourceTree = "<group>"; };
 		1736E83A1E0AD24800B442BA /* YLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLUtility.h; sourceTree = "<group>"; };
 		1736E83B1E0AD24800B442BA /* YLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLUtility.m; sourceTree = "<group>"; };
 		1736E83D1E0ADD7D00B442BA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -299,6 +307,8 @@
 			children = (
 				1752CEC91E0935AF002E220D /* YLAddressBookViewController.h */,
 				1752CECA1E0935AF002E220D /* YLAddressBookViewController.m */,
+				1727DFC41E1DEBB800393218 /* YLAddressBookZoomController.h */,
+				1727DFC51E1DEBB800393218 /* YLAddressBookZoomController.m */,
 			);
 			path = Viewcontrollers;
 			sourceTree = "<group>";
@@ -306,6 +316,9 @@
 		1752CECB1E0935AF002E220D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1727DFC71E1DED9000393218 /* YLZoomView.h */,
+				1727DFC81E1DED9000393218 /* YLZoomView.m */,
+				1727DFCA1E1DEDCA00393218 /* YLZoomView.xib */,
 				1752CED41E093EE4002E220D /* YLDepartmentCell.h */,
 				1752CED51E093EE4002E220D /* YLDepartmentCell.m */,
 				1752CED61E093EE4002E220D /* YLDepartmentCell.xib */,
@@ -439,6 +452,7 @@
 				1752CEAF1E0921B4002E220D /* gounda_takeshi.png in Resources */,
 				1752CED81E093EE4002E220D /* YLDepartmentCell.xib in Resources */,
 				17A0A2FE1E0A8C190053C286 /* 综合部.plist in Resources */,
+				1727DFCB1E1DEDCA00393218 /* YLZoomView.xib in Resources */,
 				17A0A2FC1E0A8C190053C286 /* 解决方案及产品中心.plist in Resources */,
 				1752CEB41E093468002E220D /* GPU.plist in Resources */,
 				17A0A2FD1E0A8C190053C286 /* 项目实施与服务中心.plist in Resources */,
@@ -468,11 +482,13 @@
 			files = (
 				1736E83C1E0AD24800B442BA /* YLUtility.m in Sources */,
 				1752CED71E093EE4002E220D /* YLDepartmentCell.m in Sources */,
+				1727DFC91E1DED9000393218 /* YLZoomView.m in Sources */,
 				1724B6DC1E09214200D042A2 /* YLTableViewCell.m in Sources */,
 				1752CECC1E0935AF002E220D /* YLAddressBookViewController.m in Sources */,
 				1752CED31E0938DE002E220D /* YLAddressBookModel.m in Sources */,
 				1752CEE11E093F2F002E220D /* YLMemeberCell.m in Sources */,
 				1724B6911E0911FE00D042A2 /* main.m in Sources */,
+				1727DFC61E1DEBB800393218 /* YLAddressBookZoomController.m in Sources */,
 				1724B6D51E0920FF00D042A2 /* YLViewController.m in Sources */,
 				1724B6C71E0912B900D042A2 /* YLAppDelegate.m in Sources */,
 			);

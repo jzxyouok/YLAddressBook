@@ -68,7 +68,7 @@
 
     }
 }
-#pragma mark -- tableView的代理开始
+#pragma mark -- tableView的UITableViewDataSource
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -88,9 +88,26 @@
 {
     return 2;
 }
-/*
- * 跳转的时候，要做动画处理
- */
+-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell* cell;    //人员的
+    if (indexPath.section == 0) {
+        //cell.backgroundColor = [UIColor redColor];
+        YLMemeberCell* memeberCell = [YLMemeberCell cellWithTableView:tableView];
+        memeberCell.dataModel = _memeberDataArray[indexPath.row];
+        cell = memeberCell;
+    }
+    //部门的
+    else if(indexPath.section == 1)
+    {
+       // cell.backgroundColor = [UIColor blueColor];
+        YLDepartmentCell* departmentCell = [YLDepartmentCell cellWithTableView:tableView];
+        departmentCell.dataModel = _departmentDataArray[indexPath.row];
+        cell= departmentCell;;
+    }
+    return cell;
+}
+#pragma mark -- tableView的UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.section == 0)
@@ -113,26 +130,6 @@
         self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回上级目录" style:UIBarButtonItemStylePlain target:self action:nil];
     }
 }
--(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell* cell;    //人员的
-    if (indexPath.section == 0) {
-        //cell.backgroundColor = [UIColor redColor];
-        YLMemeberCell* memeberCell = [YLMemeberCell cellWithTableView:tableView];
-        memeberCell.dataModel = _memeberDataArray[indexPath.row];
-        cell = memeberCell;
-    }
-    //部门的
-    else if(indexPath.section == 1)
-    {
-       // cell.backgroundColor = [UIColor blueColor];
-        YLDepartmentCell* departmentCell = [YLDepartmentCell cellWithTableView:tableView];
-        departmentCell.dataModel = _departmentDataArray[indexPath.row];
-        cell= departmentCell;;
-    }
-    return cell;
-}
-#pragma mark -- tableView的代理结束
 
 #pragma mark -- YLAddressBookViewController代理的开始
 -(NSArray *)YLAddressBookViewController:(YLAddressBookViewController *)viewcontroller getNextListDataWithConnect:(NSString *)connectPlist

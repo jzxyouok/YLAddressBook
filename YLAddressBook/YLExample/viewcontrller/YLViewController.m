@@ -10,13 +10,18 @@
 #import "YLTableViewCell.h"
 #import "YLAddressBookViewController.h"
 #import "YLAddressBookModel.h"
+#import "YLAddressBookZoomController.h"
 @interface YLViewController ()<UITableViewDelegate,UITableViewDataSource,YLAddressBookViewControllerDelegate>
 
 @property(nonatomic,strong) UITableView* tableView;
 
+
 @end
 
 @implementation YLViewController
+{
+    NSArray* _dataArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,9 +34,12 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"AddressList"];
     [self.view addSubview:self.tableView];
     //隐藏分割线
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //
+    _dataArray = [NSArray arrayWithObjects:@"在线通讯录01",@"在线通讯录02", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,12 +47,20 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - tableView的代理
 
+#pragma mark - tableView的UITableViewDataSource代理
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return _dataArray.count;
 }
+-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"AddressList"];
+    cell.textLabel.text = _dataArray[indexPath.row];
+    return cell;
+}
+
+#pragma mark - tableView的UITableViewDelegate代理
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
@@ -54,13 +70,12 @@
         [self.navigationController pushViewController:addreBookViewController animated:YES];
         self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:nil];
         
+    }else if(indexPath.row == 1)
+    {
+        YLAddressBookZoomController* addreBookZoomController = [[YLAddressBookZoomController alloc] init];
+        [self.navigationController pushViewController:addreBookZoomController animated:YES];
+         self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:nil];
     }
-}
--(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    YLTableViewCell* cell = [YLTableViewCell cellWithTableView:tableView];
-    return cell;
-    
 }
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
