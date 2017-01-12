@@ -74,7 +74,7 @@
     {
         YLAddressBookZoomController* addreBookZoomController = [[YLAddressBookZoomController alloc] init];
         [self.navigationController pushViewController:addreBookZoomController animated:YES];
-         self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:nil];
+//         self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:nil];
     }
 }
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

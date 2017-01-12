@@ -40,6 +40,7 @@
 		17A0A2FC1E0A8C190053C286 /* 解决方案及产品中心.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A0A2F91E0A8C190053C286 /* 解决方案及产品中心.plist */; };
 		17A0A2FD1E0A8C190053C286 /* 项目实施与服务中心.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A0A2FA1E0A8C190053C286 /* 项目实施与服务中心.plist */; };
 		17A0A2FE1E0A8C190053C286 /* 综合部.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A0A2FB1E0A8C190053C286 /* 综合部.plist */; };
+		17AC477C1E27D26A00841655 /* 53900f7269db0.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AC477B1E27D26A00841655 /* 53900f7269db0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		17A0A2F91E0A8C190053C286 /* 解决方案及产品中心.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "解决方案及产品中心.plist"; sourceTree = "<group>"; };
 		17A0A2FA1E0A8C190053C286 /* 项目实施与服务中心.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "项目实施与服务中心.plist"; sourceTree = "<group>"; };
 		17A0A2FB1E0A8C190053C286 /* 综合部.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "综合部.plist"; sourceTree = "<group>"; };
+		17AC477B1E27D26A00841655 /* 53900f7269db0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 53900f7269db0.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 		1752CEAD1E0921B4002E220D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				17AC477B1E27D26A00841655 /* 53900f7269db0.png */,
 				17A0A2F61E0A857E0053C286 /* messageframe_pic_arrow.png */,
 				1752CEAE1E0921B4002E220D /* gounda_takeshi.png */,
 			);
@@ -454,6 +457,7 @@
 				17A0A2FE1E0A8C190053C286 /* 综合部.plist in Resources */,
 				1727DFCB1E1DEDCA00393218 /* YLZoomView.xib in Resources */,
 				17A0A2FC1E0A8C190053C286 /* 解决方案及产品中心.plist in Resources */,
+				17AC477C1E27D26A00841655 /* 53900f7269db0.png in Resources */,
 				1752CEB41E093468002E220D /* GPU.plist in Resources */,
 				17A0A2FD1E0A8C190053C286 /* 项目实施与服务中心.plist in Resources */,
 			);

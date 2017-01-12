@@ -37,8 +37,10 @@
     rootView.departmentId = @"";
     [self.view addSubview:rootView];
     rootView.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height);
+    self.viewsArray = [NSMutableArray array];
     self.leftView = rootView;
-    
+    [self.viewsArray addObject:rootView];
+    [self setBackBtn];
 }
 #pragma mark - YLZoomViewDelegate的实现
 -(NSArray*) zoomView:(YLZoomView*) zoomView withDepartmentId:(NSString*) departmentId
@@ -86,8 +88,10 @@
 
     }else if([model.itemType isEqualToString:@"department"])
     {
+       
         if (zoomView == self.leftView && self.rightView == nil) {
             YLZoomView* nextView = [YLZoomView zoomViewWithDepartmentId:@""];
+            [self.viewsArray addObject:nextView];
             nextView.delegate = self;
             nextView.departmentId = model.connectionplist;
             nextView.frame = CGRectMake(SCREENWIDTH, 64, 200, SCREENHEIGHT);
@@ -129,15 +133,18 @@
             rect1.origin.x = 0;
             rect1.origin.y = 64;
             rect1.size.height = self.view.bounds.size.height;
-            rect1.size.width = SCREENWIDTH*105/320;
+            rect1.size.width = SCREENWIDTH;
+            //rect1.size.width = SCREENWIDTH*105/320;
             self.leftView = self.rightView;
             
             
             YLZoomView* nextView = [YLZoomView zoomViewWithDepartmentId:@""];
+            
             nextView.delegate = self;
             nextView.departmentId = model.connectionplist;
             nextView.frame = CGRectMake(SCREENWIDTH, 64, 200, SCREENHEIGHT);
             [self.view addSubview:nextView];
+            [self.viewsArray addObject:nextView];
             
             CGRect rect2 = self.view.frame;
             rect2.origin.x = SCREENWIDTH*105/320;
@@ -147,33 +154,78 @@
             self.rightView = nextView;
             
             
-            
+            [self.leftView setShowMemebers:NO];
             [UIView animateWithDuration:0.5 animations:^{
-                //self.leftView.frame = rect2;
-                //nextView.frame = rect;
-                self.leftView.frame = rect1;
-                //self.rightView.frame = rect2;
-                //tempView.frame = rect;
-                
-                
+               self.leftView.frame = rect1;
+               self.rightView.frame = rect2;
             } completion:^(BOOL finished) {
-                
-            }];
-            [UIView animateWithDuration:0.5 animations:^{
-                //self.leftView.frame = rect2;
-                //nextView.frame = rect;
-                //self.leftView.frame = rect1;
-                self.rightView.frame = rect2;
-                //tempView.frame = rect;
-                
-                
-            } completion:^(BOOL finished) {
+                CGRect rect = self.leftView.frame;
+                rect.size.width = SCREENWIDTH*105/320;
+                self.leftView.frame = rect;
                 
             }];
 
         }
         
     }
+    [self setBackBtn];
+   }
+-(void)gotoBack:(id) sender
+{
+    //self.rightView.hidden = YES;
+    if (self.rightView == self.viewsArray.lastObject) {
+        [self.viewsArray removeLastObject];
+        CGRect rightRect;
+        rightRect = self.rightView.frame;
+        rightRect.origin.x = SCREENWIDTH;
+        CGRect leftRect;
+        if (self.viewsArray.count == 1) {
+            leftRect = self.leftView.frame;
+            leftRect.size.width = SCREENWIDTH;
+        }
+        else
+        {
+            leftRect = self.leftView.frame;
+            leftRect.origin.x = SCREENWIDTH*105/320;
+            leftRect.size.width = SCREENWIDTH*225/320;
+        }
+        [self.leftView setShowMemebers:YES];
+        [UIView animateWithDuration:0.5 animations:^{
+            self.leftView.frame = leftRect;
+            self.rightView.frame = rightRect;
+            
+        } completion:^(BOOL finished) {
+            if (self.viewsArray.count > 1) {
+                self.leftView = self.viewsArray[self.viewsArray.count-2];
+                self.rightView = self.viewsArray.lastObject;
+            }
+            else
+            {
+                self.leftView = self.viewsArray.lastObject;
+                self.rightView = nil;
+               
+            }
+            
+        }];
+        
+    }else
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    [self setBackBtn];
+}
+-(void) setBackBtn
+{
+    if (self.viewsArray.count > 1) {
+        UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithTitle:@"返回上一级" style:UIBarButtonItemStylePlain target:self action:@selector(gotoBack:)];
+        self.navigationItem.leftBarButtonItem = item;
+    }
+    else
+    {
+        UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(gotoBack:)];
+        self.navigationItem.leftBarButtonItem = item;
+    }
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

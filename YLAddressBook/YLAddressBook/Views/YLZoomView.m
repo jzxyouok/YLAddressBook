@@ -30,10 +30,15 @@
     _membersData = [NSMutableArray array];
     _departmentData = [NSMutableArray array];
      self.tableView.tableFooterView = [[UIView  alloc] initWithFrame:CGRectZero];
+    self.isShowMemeber = YES;
 //    self.departmentId = departmentId;
    
 }
-
+-(void) setShowMemebers:(BOOL) isShowMemeber
+{
+    self.isShowMemeber = isShowMemeber;
+    [self.tableView reloadData];
+}
 -(void) setDepartmentId:(NSString *)departmentId
 {
     
@@ -87,7 +92,15 @@
 {
     if(section == 0)
     {
-        return _membersData.count;
+        if (self.isShowMemeber == YES) {
+            
+            return _membersData.count;
+        }
+        else
+        {
+            return 0;
+        }
+       
     }
     else if(section == 1)
     {

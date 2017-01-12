@@ -29,8 +29,16 @@
  */
 @property(nonatomic,weak) id<YLZoomViewDelegate> delegate;
 /*
+ *是否显示工作人员
+ */
+@property(nonatomic,assign) BOOL isShowMemeber;
+/*
  *构造方法
  */
 +(instancetype) zoomViewWithDepartmentId:(NSString*) departmentId;
+/*
+ *设置是否显示。。。
+ */
+-(void) setShowMemebers:(BOOL) isShowMemeber;
 
 @end
